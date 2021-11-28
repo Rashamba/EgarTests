@@ -1,14 +1,10 @@
 package ru.stqa.pft.mkb;
 
-import java.util.regex.Pattern;
 import java.util.concurrent.TimeUnit;
 import org.testng.annotations.*;
 import static org.testng.Assert.*;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.Select;
-import java.io.File;
-import org.apache.commons.io.FileUtils;
 
 public class UntitledTestCase {
   private WebDriver driver;
@@ -19,32 +15,30 @@ public class UntitledTestCase {
 
   @BeforeClass(alwaysRun = true)
   public void setUp() throws Exception {
-    System.setProperty("webdriver.chrome.driver", "");
     driver = new ChromeDriver();
     baseUrl = "https://www.google.com/";
     driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-    js = (JavascriptExecutor) driver;
   }
 
   @Test
   public void testUntitledTestCase() throws Exception {
     driver.get("http://ezdoc-dev:84/#/portal/login");
     driver.findElement(By.xpath("//div[@id='login-form']/form/mat-form-field/div/div/div")).click();
-    driver.findElement(By.id("mat-input-42")).clear();
-    driver.findElement(By.id("mat-input-42")).sendKeys("IKrasnoborodko");
-    driver.findElement(By.id("mat-input-43")).click();
-    driver.findElement(By.id("mat-input-43")).clear();
-    driver.findElement(By.id("mat-input-43")).sendKeys("lugoih4T");
+    driver.findElement(By.id("mat-input-0")).clear();
+    driver.findElement(By.id("mat-input-0")).sendKeys("IKrasnoborodko");
+    driver.findElement(By.id("mat-input-1")).click();
+    driver.findElement(By.id("mat-input-1")).clear();
+    driver.findElement(By.id("mat-input-1")).sendKeys("lugoih4T");
     driver.findElement(By.xpath("//div[@id='login-form']/form/button")).click();
     driver.findElement(By.xpath("//div[@id='wrapper']/div/fuse-content/ng-component/div/div/mat-toolbar/div[2]/h5")).click();
     driver.findElement(By.xpath("//div[@id='wrapper']/div/fuse-content/ng-component/div/div/mat-toolbar/div[3]/ez-list-btn-mkb-toolbar/create-btn/button/span")).click();
-    driver.findElement(By.xpath("//mat-dialog-container[@id='mat-dialog-2']/ez-edit-book-dialog/ez-dictionary-edit-form/div/edit-entity-btn-toolbar/mat-toolbar/run-process-btn/button/span")).click();
-    driver.findElement(By.id("mat-input-56")).click();
-    driver.findElement(By.id("mat-input-56")).clear();
-    driver.findElement(By.id("mat-input-56")).sendKeys("1");
-    driver.findElement(By.id("mat-input-58")).click();
-    driver.findElement(By.id("mat-input-58")).clear();
-    driver.findElement(By.id("mat-input-58")).sendKeys("3");
+    driver.findElement(By.xpath("//*/text()[normalize-space(.)='Запустить процесс']/parent::*")).click();
+    driver.findElement(By.xpath("//input[@id='mat-input-12']")).click();
+    driver.findElement(By.xpath("//input[@id='mat-input-12']")).clear();
+    driver.findElement(By.xpath("//input[@id='mat-input-12']")).sendKeys("1");
+    driver.findElement(By.xpath("//input[@id='mat-input-14']")).click();
+    driver.findElement(By.xpath("//input[@id='mat-input-14']")).clear();
+    driver.findElement(By.xpath("//input[@id='mat-input-14']")).sendKeys("3");
     driver.findElement(By.xpath("//mat-dialog-container[@id='mat-dialog-2']/ez-edit-book-dialog/ez-dictionary-edit-form/div/edit-entity-btn-toolbar/mat-toolbar")).click();
     driver.findElement(By.xpath("//mat-dialog-container[@id='mat-dialog-2']/ez-edit-book-dialog/ez-dictionary-edit-form/div/edit-entity-btn-toolbar/mat-toolbar/complete-step-btn/button/span")).click();
     driver.findElement(By.xpath("//mat-dialog-container[@id='mat-dialog-2']/ez-edit-book-dialog/ez-dictionary-edit-form/div/edit-entity-btn-toolbar/mat-toolbar/verification-btn/button/span")).click();
