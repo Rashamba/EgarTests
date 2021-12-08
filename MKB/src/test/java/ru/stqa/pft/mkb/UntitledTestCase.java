@@ -31,19 +31,15 @@ public class UntitledTestCase {
     driver.findElement(By.id("mat-input-1")).sendKeys("lugoih4T");
     driver.findElement(By.xpath("//div[@id='login-form']/form/button")).click();
     driver.findElement(By.xpath("//div[@id='wrapper']/div/fuse-content/ng-component/div/div/mat-toolbar/div[2]/h5")).click();
+    driver.findElement(By.xpath("//div[@id='mat-tab-label-6-5']/div")).click();
     driver.findElement(By.xpath("//div[@id='wrapper']/div/fuse-content/ng-component/div/div/mat-toolbar/div[3]/ez-list-btn-mkb-toolbar/create-btn/button/span")).click();
-    driver.findElement(By.xpath("//*/text()[normalize-space(.)='Запустить процесс']/parent::*")).click();
-    driver.findElement(By.name("test1011")).click();
-    driver.findElement(By.name("test1011")).clear();
-    driver.findElement(By.name("test1011")).sendKeys("1");
-    driver.findElement(By.xpath("//input[@id='mat-input-14']")).click();
-    driver.findElement(By.xpath("//input[@id='mat-input-14']")).clear();
-    driver.findElement(By.xpath("//input[@id='mat-input-14']")).sendKeys("3");
-    driver.findElement(By.xpath("//mat-dialog-container[@id='mat-dialog-2']/ez-edit-book-dialog/ez-dictionary-edit-form/div/edit-entity-btn-toolbar/mat-toolbar")).click();
+    driver.findElement(By.id("mat-input-60")).click();
+    driver.findElement(By.id("mat-input-60")).clear();
+    driver.findElement(By.id("mat-input-60")).sendKeys("Test1");
+    driver.findElement(By.xpath("//mat-dialog-container[@id='mat-dialog-2']/ez-edit-book-dialog/ez-dictionary-edit-form/div/mat-horizontal-stepper/div")).click();
     driver.findElement(By.xpath("//mat-dialog-container[@id='mat-dialog-2']/ez-edit-book-dialog/ez-dictionary-edit-form/div/edit-entity-btn-toolbar/mat-toolbar/complete-step-btn/button/span")).click();
-    driver.findElement(By.xpath("//mat-dialog-container[@id='mat-dialog-2']/ez-edit-book-dialog/ez-dictionary-edit-form/div/edit-entity-btn-toolbar/mat-toolbar/verification-btn/button/span")).click();
-    driver.findElement(By.xpath("//mat-expansion-panel-header[@id='mat-expansion-panel-header-16']/span/mat-panel-title")).click();
-    driver.findElement(By.xpath("//mat-dialog-container[@id='mat-dialog-2']/ez-edit-book-dialog/ez-dictionary-edit-form/div/edit-entity-btn-toolbar/mat-toolbar/close-btn/button/span")).click();
+    driver.findElement(By.xpath("//mat-dialog-container[@id='mat-dialog-2']/ez-edit-book-dialog/ez-dictionary-edit-form/div/edit-entity-btn-toolbar/mat-toolbar/verification-btn/button")).click();
+    driver.findElement(By.xpath("//div[4]/div")).click();
     driver.findElement(By.xpath("//div[@id='wrapper']/fuse-navbar-vertical/div[2]/fuse-navigation/div/fuse-nav-vertical-group[9]/div[2]/fuse-nav-vertical-item/a/span")).click();
   }
 

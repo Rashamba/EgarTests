@@ -24,11 +24,11 @@ public class Test1 {
   public void test1() throws Exception {
     driver.get("http://ezdoc-dev:84/#/portal/login");
     driver.findElement(By.xpath("//div[@id='login-form']/form/mat-form-field/div/div/div")).click();
-    driver.findElement(By.id("mat-input-46")).clear();
-    driver.findElement(By.id("mat-input-46")).sendKeys("IKrasnoborodko");
-    driver.findElement(By.id("mat-input-47")).click();
-    driver.findElement(By.id("mat-input-47")).clear();
-    driver.findElement(By.id("mat-input-47")).sendKeys("lugoih4T");
+    driver.findElement(By.id("mat-input-0")).clear();
+    driver.findElement(By.id("mat-input-0")).sendKeys("IKrasnoborodko");
+    driver.findElement(By.id("mat-input-70")).click();
+    driver.findElement(By.id("mat-input-70")).clear();
+    driver.findElement(By.id("mat-input-70")).sendKeys("lugoih4T");
     driver.findElement(By.xpath("//div[@id='login-form']/form/button/span")).click();
     driver.findElement(By.xpath("//div[@id='wrapper']/div/fuse-content/ng-component/div/div/mat-toolbar/div[2]/h5")).click();
     driver.findElement(By.xpath("//div[@id='mat-tab-label-4-5']/div")).click();

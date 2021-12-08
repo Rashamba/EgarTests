@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c7e9065a-b9fb-49be-bb8b-cbeb4dacc64e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MKB/src/test/java/ru/stqa/pft/mkb/Test1.java" beforeDir="false" afterPath="$PROJECT_DIR$/MKB/src/test/java/ru/stqa/pft/mkb/Test1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MKB/src/test/java/ru/stqa/pft/mkb/UntitledTestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/MKB/src/test/java/ru/stqa/pft/mkb/UntitledTestCase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -98,6 +98,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Test1" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="MKB.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.stqa.pft.mkb.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.stqa.pft.mkb" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.mkb.Test1" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UntitledTestCase" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MKB.test" />
       <extension name="coverage">
@@ -118,6 +135,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.UntitledTestCase" />
+        <item itemvalue="TestNG.Test1" />
         <item itemvalue="Gradle.UntitledTestCase" />
         <item itemvalue="Application.MyFirstProgram" />
       </list>
@@ -145,26 +163,5 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/MKB/src/test/java/ru/stqa/pft/mkb/UntitledTestCase.java</url>
-          <line>36</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/MKB/src/test/java/ru/stqa/pft/mkb/UntitledTestCase.java</url>
-          <line>35</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/MKB/src/test/java/ru/stqa/pft/mkb/UntitledTestCase.java</url>
-          <line>37</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
