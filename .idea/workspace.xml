@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c7e9065a-b9fb-49be-bb8b-cbeb4dacc64e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MKB/src/test/java/ru/stqa/pft/mkb/UntitledTestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/MKB/src/test/java/ru/stqa/pft/mkb/UntitledTestCase.java" afterDir="false" />
     </list>
@@ -25,6 +26,9 @@
     <system id="GRADLE">
       <state>
         <task path="$PROJECT_DIR$/sandbox">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/MKB">
           <activation />
         </task>
         <projects_view>
@@ -140,5 +144,27 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/MKB/src/test/java/ru/stqa/pft/mkb/UntitledTestCase.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/MKB/src/test/java/ru/stqa/pft/mkb/UntitledTestCase.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/MKB/src/test/java/ru/stqa/pft/mkb/UntitledTestCase.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
