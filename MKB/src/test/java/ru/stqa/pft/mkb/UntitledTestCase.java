@@ -31,11 +31,11 @@ public class UntitledTestCase {
     driver.findElement(By.id("mat-input-1")).sendKeys("lugoih4T");
     driver.findElement(By.xpath("//div[@id='login-form']/form/button")).click();
     driver.findElement(By.xpath("//div[@id='wrapper']/div/fuse-content/ng-component/div/div/mat-toolbar/div[2]/h5")).click();
-    driver.findElement(By.xpath("//div[@id='mat-tab-label-6-5']/div")).click();
+    driver.findElement(By.xpath("//div[@class='mat-tab-labels']//div[text()='test7670']")).click();
     driver.findElement(By.xpath("//div[@id='wrapper']/div/fuse-content/ng-component/div/div/mat-toolbar/div[3]/ez-list-btn-mkb-toolbar/create-btn/button/span")).click();
-    driver.findElement(By.id("mat-input-60")).click();
-    driver.findElement(By.id("mat-input-60")).clear();
-    driver.findElement(By.id("mat-input-60")).sendKeys("Test1");
+    driver.findElement(By.xpath("//mat-drawer-container[@class='mat-drawer-container ng-star-inserted']//*[text()='test31']")).click();
+    //driver.findElement(By.xpath("//mat-drawer-container[@class='mat-drawer-container ng-star-inserted']//*[text()='test31']")).clear();
+    driver.findElement(By.xpath("//mat-drawer-container[@class='mat-drawer-container ng-star-inserted']//*[text()='test31']")).sendKeys("1");
     driver.findElement(By.xpath("//mat-dialog-container[@id='mat-dialog-2']/ez-edit-book-dialog/ez-dictionary-edit-form/div/mat-horizontal-stepper/div")).click();
     driver.findElement(By.xpath("//mat-dialog-container[@id='mat-dialog-2']/ez-edit-book-dialog/ez-dictionary-edit-form/div/edit-entity-btn-toolbar/mat-toolbar/complete-step-btn/button/span")).click();
     driver.findElement(By.xpath("//mat-dialog-container[@id='mat-dialog-2']/ez-edit-book-dialog/ez-dictionary-edit-form/div/edit-entity-btn-toolbar/mat-toolbar/verification-btn/button")).click();
@@ -50,6 +50,17 @@ public class UntitledTestCase {
     if (!"".equals(verificationErrorString)) {
       fail(verificationErrorString);
     }
+  }
+
+  public void clickOnInvisibleElement(WebElement element) {
+
+    String script = "var object = arguments[0];"
+            + "var theEvent = document.createEvent(\"MouseEvent\");"
+            + "theEvent.initMouseEvent(\"click\", true, true, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);"
+            + "object.dispatchEvent(theEvent);"
+            ;
+
+    ((JavascriptExecutor)driver).executeScript(script, element);
   }
 
   private boolean isElementPresent(By by) {
