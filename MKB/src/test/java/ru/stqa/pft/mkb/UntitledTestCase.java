@@ -33,16 +33,14 @@ public class UntitledTestCase {
     driver.findElement(By.xpath("//div[@id='wrapper']/div/fuse-content/ng-component/div/div/mat-toolbar/div[2]/h5")).click();
     driver.findElement(By.xpath("//div[@class='mat-tab-labels']//div[text()='test7670']")).click();
     driver.findElement(By.xpath("//div[@id='wrapper']/div/fuse-content/ng-component/div/div/mat-toolbar/div[3]/ez-list-btn-mkb-toolbar/create-btn/button/span")).click();
-    driver.findElement(By.xpath("//mat-drawer-container[@class='mat-drawer-container ng-star-inserted']//*[text()='test31']")).click();
-    //driver.findElement(By.xpath("//mat-drawer-container[@class='mat-drawer-container ng-star-inserted']//*[text()='test31']")).clear();
-    driver.findElement(By.xpath("//mat-drawer-container[@class='mat-drawer-container ng-star-inserted']//*[text()='test31']")).sendKeys("1");
-    driver.findElement(By.xpath("//mat-dialog-container[@id='mat-dialog-2']/ez-edit-book-dialog/ez-dictionary-edit-form/div/mat-horizontal-stepper/div")).click();
-    driver.findElement(By.xpath("//mat-dialog-container[@id='mat-dialog-2']/ez-edit-book-dialog/ez-dictionary-edit-form/div/edit-entity-btn-toolbar/mat-toolbar/complete-step-btn/button/span")).click();
-    driver.findElement(By.xpath("//mat-dialog-container[@id='mat-dialog-2']/ez-edit-book-dialog/ez-dictionary-edit-form/div/edit-entity-btn-toolbar/mat-toolbar/verification-btn/button")).click();
-    driver.findElement(By.xpath("//div[4]/div")).click();
+    driver.findElement(By.xpath("//*[@name=\"test31\"]")).click();
+    driver.findElement(By.xpath("//*[@name=\"test31\"]")).clear();
+    driver.findElement(By.xpath("//*[@name=\"test31\"]")).sendKeys("1");
+    driver.findElement(By.xpath("//span[@class='mat-button-wrapper']/span[text()='Сохранить']")).click();
     driver.findElement(By.xpath("//div[@id='wrapper']/fuse-navbar-vertical/div[2]/fuse-navigation/div/fuse-nav-vertical-group[9]/div[2]/fuse-nav-vertical-item/a/span")).click();
   }
 
+  //*[@id="mat-dialog-3"]/ez-edit-book-dialog/ez-dictionary-edit-form/div[1]/edit-entity-btn-toolbar/mat-toolbar/complete-step-btn
   @AfterClass(alwaysRun = true)
   public void tearDown() throws Exception {
     driver.quit();
